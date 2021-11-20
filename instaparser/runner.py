@@ -12,6 +12,6 @@ if __name__ == '__main__':
     crawler_settings.setmodule(settings)
 
     process = CrawlerProcess(settings=crawler_settings)
-    # process.crawl(InstaFollowersSpider)
+    process.crawl(InstaFollowersSpider)
     process.crawl(InstaFollowingSpider)
     process.start()
